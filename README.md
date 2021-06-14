@@ -30,6 +30,7 @@ server {
         deny all;
     }
 }
+
 sudo ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled/
 
 nano /var/www/magento/index.html
