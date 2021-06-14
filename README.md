@@ -10,6 +10,7 @@ sudo nano /etc/nginx/sites-available/magento
 
 
 server {
+
     listen 80;
     server_name magento www.magento;
     root /var/www/magento;
@@ -28,7 +29,6 @@ server {
     location ~ /\.ht {
         deny all;
     }
-
 }
 sudo ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled/
 
