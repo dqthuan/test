@@ -1,4 +1,4 @@
-# install magwento 
+# install magento 
 
 sudo apt-get install php7.4 php7.4-fpm php7.4-mcrypt php7.4-mbstring php7.4-zip php7.4-curl php7.4-cli php7.4-mysql php7.4-imagick php7.4-gd php7.4-xsl php7.4-json php7.4-intl php7.4-dev php7.4-common libcurl4 curl -y
 
