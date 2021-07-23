@@ -56,3 +56,26 @@ php bin/magento setup:install --base-url="http://127.0.0.1/magento2/" --db-host=
 sudo systemctl restart nginx
 sudo php bin/magento module:disable Magento_TwoFactorAuth
 
+sudo chmod -R 777 ./
+
+sudo service elasticsearch start
+
+sudo service nginx start
+
+
+# delete cache
+php bin/magento cache:flush
+
+php bin/magento cache:clean
+
+
+# create module
+
+php bin/magento module:status
+
+php bin/magento module:enable (name vendor)_(name module)
+
+sudo rm -rf var/generation/*
+
+sudo rm -rf var/cache/*
+
